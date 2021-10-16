@@ -99,8 +99,9 @@ function addEngineer() {
     name: "github",
     message: "What is the engineer's github handle?",
   },
-  ])
-        // PUSH ENG
+])
+
+// PUSH ENG
 .then(function(data) {
   let name = data.name;
   let id = data.id;
@@ -117,18 +118,18 @@ function addIntern() {
     type: "input",
     name: "name",
     message: "What is the intern's name?",
-  },
-  {
+    },
+    {
     type: "input",
     name: "id",
     message: "What is the intern's employee ID?",
-  },
-  {
+    },
+    {
     type: "input",
     name: "email",
     message: "What is the intern's email address?",
-  },
-  {
+    },
+    {
     type: "input",
     name: "school",
     message: "What school does the intern attend?",
@@ -143,36 +144,36 @@ function addIntern() {
   let teammate = new Intern(name, id, email, school);
   myTeam.push(teammate);
   addMember();
-});
+  });
 }
 // CREATE PAGE
 function buildMyTeam() {
-    console.log("Team ready! Check the 'dist' folder for your page.");
-    let pageArray = [];
-    let pageHead = `<!DOCTYPE html>
-      <html lang="en">
-      <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>${myTeam[0]} | Team Page</title>
-      <meta name="description" content="Learn more about the best team: ${myTeam[0]}">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" />
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="./css/style.css"/>
-      </head>
-      <body>
-          <div class="header"><h1>${myTeam[0]}</h1></div>
-          <div class="container">`;
+  console.log("Team ready! Check the 'dist' folder for your page.");
+  let pageArray = [];
+  let pageHead = `<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>${myTeam[0]} | Team Page</title>
+    <meta name="description" content="Learn more about the best team: ${myTeam[0]}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css"/>
+    </head>
+    <body>
+      <div class="header"><h1>${myTeam[0]}</h1></div>
+      <div class="container">`;
     pageArray.push(pageHead);
     for (let i = 1; i < myTeam.length; i++) {
     let object = `
       <div class="card">
-          <div class="card-header">
-            <h3>${myTeam[i].name}</h3>
-            <h4>${myTeam[i].title}</h4>
-          </div>
+        <div class="card-header">
+          <h3>${myTeam[i].name}</h3>
+          <h4>${myTeam[i].title}</h4>
+        </div>
 
           <div class="card-content">
             <p><strong>EMAIL:</strong> <a href="mailto:${myTeam[i].email}">${myTeam[i].email}</a></p>
