@@ -22,11 +22,11 @@ A command line application to dynamically create a webpage of key employee info 
 # Project Visuals :sunglasses:
 <img width="1156" alt="Screen Shot 2021-04-14 at 8 17 31 PM" src="images/Screen Shot 2021-10-16 at 9.57.59 PM.png">
 
-[See Video Demo of Page Generation](https://drive.google.com/file/d/1gbJIvCIcMkRFPHkYfdi6eN90NCxoqb-L/view?usp=sharing)
+[See Video Demo of Page Generation](https://youtu.be/K6z62ojLvp4)
 
 <img width="444" alt="Screen Shot 2021-04-14 at 7 50 10 PM" src="images/Screen Shot 2021-10-16 at 10.04.27 PM.png">
 
-[See Video Demo Passing Jest Tests](https://drive.google.com/file/d/1IXWD1-is0pDyM5GlaeejT8-FOdGEwUuy/view?usp=sharing)
+[See Video Demo Passing Jest Tests](https://youtu.be/xMz3APLF5hg)
 
 #### User Story 📖
 
