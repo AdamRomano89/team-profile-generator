@@ -1,6 +1,6 @@
 {
   "name": "team-profile-generator-2",
-  "author": "Sarah Durkin",
+  "author": "Adam Romano",
   "license": "MIT",
   "version": "1.0.0",
   "description": "A tool to create a team profile for all projects from the command line.",
